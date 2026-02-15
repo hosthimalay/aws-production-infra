@@ -89,7 +89,7 @@ Additional components:
 ├── main.tf              # Root module — wires everything together
 ├── variables.tf         # Input variables
 ├── outputs.tf           # Output values
-├── terraform.tfvars     # Your variable values (gitignored)
+├── terraform.tfvars     # (not committed) Your variable values (gitignored)
 ├── backend.tf           # S3 remote state config
 ├── modules/
 │   ├── vpc/             # VPC, subnets, IGW, NAT, route tables
