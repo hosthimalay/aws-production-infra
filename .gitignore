@@ -1,0 +1,15 @@
+# Terraform
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+*.tfplan
+tfplan
+
+# Secret variable files — NEVER commit
+terraform.tfvars
+*.auto.tfvars
+
+# OS
+.DS_Store
+Thumbs.db
