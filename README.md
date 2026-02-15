@@ -39,6 +39,31 @@ Internet Gateway
          ▼
     S3 Bucket (logs + state)
 ```
+Additional components:
+- NAT Gateway for outbound traffic
+- S3 bucket for application storage
+- S3 backend for Terraform state
+- DynamoDB table for state locking
+
+### Remote State Management
+- S3 backend
+- DynamoDB locking
+- Prevents concurrent state corruption
+
+### High Availability
+- Resources spread across 2 AZs
+- Auto Scaling Group behind ALB
+- RDS deployed in private subnets
+
+### Security Design
+- RDS not publicly accessible
+- Layered security groups
+- IAM instance profile for EC2
+- Private subnet isolation
+
+### Observability
+- CloudWatch alarms
+- Dashboard for ALB and EC2 metrics
 
 ## Features
 
